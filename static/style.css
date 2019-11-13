@@ -1,0 +1,205 @@
+.nav-after-login {
+    margin-left: 200px;
+}
+
+@media (max-width: 400px){
+    .nav-after-login{
+        width: 295px;
+    }
+}
+
+.my-form-align {
+    width: 340px;
+    margin: 10% auto;
+}
+
+.my-form-align form {
+    margin-bottom: 5%;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.my-form-align form button {
+    margin-top: 10%;
+    display: block;
+    width: 100%;
+}
+
+#navbar-brand-color {
+    color: #EDF5E1;
+}
+
+body {
+    background-color: #EDF5E1;
+}
+
+nav {
+    background-color: #ADADAD;
+}
+
+.nav-bar-text .nav-item .nav-text {
+    color: #EDF5E1;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+
+/* Side Navigation Bar CSS*/
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #282828;
+    overflow-x: hidden;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #EDF5E1;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #ADADAD;
+}
+
+.sidenav ul a {
+    padding: 0px 8px 6px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #EDF5E1;
+    display: block;
+}
+
+.main {
+    margin-left: 160px;
+    /* Same as the width of the sidenav */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* Chat box */
+
+.chat-content-window{
+    margin-left: 210px;
+    display: flex;
+}
+
+.chat-flex-container {
+    margin: 10px 10px 5px 10px;
+    width: 95%;
+}
+
+.input-container {
+    margin: 10px 10px 5px 210px;
+}
+
+.input-container .input-div {
+    display: flex;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.input-container .input-div .form-group button {
+    margin-left: 5px;
+}
+
+.input-container .input-div .flex_text_area {
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .chat-flex-container {
+        width: 300px;
+    }
+    .input-container {
+        width: 300px;
+        margin-left: 105px;
+    }
+    .chat-content-window{
+        width: 300px;
+        margin-left: 105px;;
+    }
+    .sidenav{
+        width: 100px;
+    }
+    .nav-after-login {
+        margin-left: 100px;
+    }
+}
+
+
+/* Chat containers */
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+
+/* Darker chat container */
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+
+/* Clear floats */
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Style time text */
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+/* Style to name */
+
+.name-left{
+    float: left;
+    color: #aaa;
+}
+
+.flex_text_area input {
+    overflow: visible;
+    width: 98%;
+    height: 100%;
+}

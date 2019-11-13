@@ -1,0 +1,25 @@
+{% extends "after_name_layout.html" %} {% block title %} Flack Chat {% endblock %}
+{% block body %}
+<div class="chat-content-window">
+    <div class="chat-flex-container">
+        {% for message in messages %}
+        <div class="container">
+            <p>{{ message.message }}</p>
+            <span class="name-left">{{ message.username }}</span>
+            <span class="time-right">{{ message.time }}</span>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="input-container">
+    <div class="input-div">
+        <div class="flex_text_area">
+            <input id="message-content" type="text" placeholder="Input Message" name="message">
+        </div>
+        <div class="">
+            <button type="Submit" class="btn btn-dark" id="submit-msg">Send</button>
+        </div>
+    </div>
+</div>
+</form>
+{% endblock %}
